@@ -1,0 +1,23 @@
+<div class="row justify-content-end">
+  <div class="col-md-4">
+    <h3>Finance Records</h3>
+  </div>
+  <div class="col-md-4"></div>
+  <div class="col-md-3"></div>
+  <div class="col-md-1 me-auto">
+    <div class="pb-2" #exportButton (click)="onBtExport()">
+      <i class="fa fa-file-excel-o fa-24"></i>
+    </div>
+  </div>
+</div>
+<ag-grid-angular style="width: 100%; height: 400px;" [rowData]="rowData" [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef" [rowSelection]="'multiple'" 
+  [defaultCsvExportParams]="defaultCsvExportParams" [defaultExcelExportParams]="defaultExcelExportParams"
+  [excelStyles]="excelStyles"
+  (firstDataRendered)="onFirstDataRendered($event)" [suppressRowClickSelection]="true" [pagination]="true"
+  [sideBar]="true" [paginationPageSize]="paginationPageSize" [paginationPageSizeSelector]="paginationPageSizeSelector"
+  [class]="themeClass" (gridReady)="onGridReady($event)"></ag-grid-angular>
+<!-- 
+  [masterDetail]="true"
+  [detailCellRendererParams]="detailCellRendererParams" 
+-->

@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Nora Thomas",
+        "account": "NT177000",
+        "mobile": 9876543210,
+        "region": "TSY001",
+        "callRecords": [
+            {
+                "name": "susan",
+                "callId": 555,
+                "duration": 72,
+                "switchCode": "SW3",
+                "direction": "Out",
+                "number": "(00) 88542069"
+            },
+            {
+                "name": "susan",
+                "callId": 556,
+                "duration": 61,
+                "switchCode": "SW3",
+                "direction": "In",
+                "number": "(01) 7432576"
+            }
+        ]
+    },
+    {
+        "name": "Mila Smith",
+        "account": "NT177001",
+        "mobile": 9876543224,
+        "region": 26.216666666666665,
+        "callRecords": [
+            {
+                "name": "susan",
+                "callId": 579,
+                "duration": 23,
+                "switchCode": "SW5",
+                "direction": "Out",
+                "number": "(02) 47485405"
+            },
+            {
+                "name": "susan",
+                "callId": 580,
+                "duration": 52,
+                "switchCode": "SW3",
+                "direction": "In",
+                "number": "(02) 32367069"
+            }
+        ]
+    },
+    {
+        "name": "Evelyn Taylor",
+        "account": "NT177002",
+        "mobile": 9876543225,
+        "region": 30.633333333333333,
+        "callRecords": [
+            {
+                "name": "susan",
+                "callId": 603,
+                "duration": 80,
+                "switchCode": "SW8",
+                "direction": "Out",
+                "number": "(05) 35713044"
+            },
+            {
+                "name": "susan",
+                "callId": 604,
+                "duration": 33,
+                "switchCode": "SW2",
+                "direction": "Out",
+                "number": "(01) 66861341"
+            }
+        ]
+    },
+    {
+        "name": "Harper Johnson",
+        "account": "NT177003",
+        "mobile": 9876543224,
+        "region": 26.483333333333334,
+        "callRecords": [
+            {
+                "name": "susan",
+                "callId": 628,
+                "duration": 43,
+                "switchCode": "SW6",
+                "direction": "In",
+                "number": "(03) 99309192"
+            },
+            {
+                "name": "susan",
+                "callId": 629,
+                "duration": 117,
+                "switchCode": "SW5",
+                "direction": "Out",
+                "number": "(08) 59342105"
+            }
+        ]
+    },
+    {
+        "name": "Addison Wilson",
+        "account": "NT177004",
+        "mobile": 9876543223,
+        "region": 24.4,
+        "callRecords": [
+            {
+                "name": "susan",
+                "callId": 652,
+                "duration": 32,
+                "switchCode": "SW9",
+                "direction": "Out",
+                "number": "(04) 77524120"
+            },
+            {
+                "name": "susan",
+                "callId": 653,
+                "duration": 44,
+                "switchCode": "SW3",
+                "direction": "Out",
+                "number": "(06) 477252"
+            }
+        ]
+    }
+]
