@@ -21,11 +21,6 @@ pipeline {
                 dependencyCheckPublisher pattern: 'dependency-check-report.xml'
             }
         }
-        stage("build"){
-            steps{
-                sh'npm run build'
-            }
-        }
         stage("publish"){
             steps{
                 sh'npm publish '
