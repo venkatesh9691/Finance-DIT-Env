@@ -1,9 +1,8 @@
 pipeline {
     agent any
 
-
   environment{
-    node = "C:\Program Files\nodejs"
+    nodejs'node18'
   }
     stages {
         stage('git') {
@@ -18,7 +17,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                withEnv(['PATH+NODEJS=${node}']) {
                   sh'npm run build'
                 }
             }
