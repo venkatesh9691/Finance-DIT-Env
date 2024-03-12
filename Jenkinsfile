@@ -1,9 +1,10 @@
 pipeline {
     agent any
-    tools{
-        path = nodejs 'C:\Program Files\nodejs'
-    }
 
+
+  environment{
+    node = "C:\Program Files\nodejs"
+  }
     stages {
         stage('git') {
             steps {
@@ -15,12 +16,12 @@ pipeline {
                 sh'npm install'
             }
         }
-      stage("OWASP Dependency Checking"){
-            steps{
-                dependencyCheck additionalArguments: ' --scan ./', odcInstallation: 'DC'
-                dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+        stage('Build') {
+            steps {
+                withEnv(['PATH+NODEJS=${node}']) {
+                  sh'npm run build'
+                }
             }
-        }
         stage("publish"){
             steps{
                 sh'npm publish '
