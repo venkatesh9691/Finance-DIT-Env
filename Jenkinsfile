@@ -15,6 +15,12 @@ pipeline {
                 sh'npm install'
             }
         }
+      stage("OWASP Dependency Checking"){
+            steps{
+                dependencyCheck additionalArguments: ' --scan ./', odcInstallation: 'DC'
+                dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+            }
+        }
         stage("build"){
             steps{
                 sh'npm run build'
