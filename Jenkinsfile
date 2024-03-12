@@ -4,10 +4,6 @@ pipeline {
   tools{
     nodejs'node18'
   }
-
-  environment{
-    NODEJS_HOME = 'C:\\Program Files\\nodejs\\'
-  }
     stages {
         stage('git') {
             steps {
@@ -21,10 +17,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-              withEnv(['PATH+NODEJS=${NODEJS_HOME}']) {
-                sh 'node --version'
+                sh 'npm run build'
               }    
-            }
           }
         stage("publish"){
             steps{
