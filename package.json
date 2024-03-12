@@ -1,6 +1,9 @@
 {
   "name": "my-ag-grid-project",
   "version": "0.0.0",
+  "publishConfig" : {
+    "registry" : "http://16.171.59.12:8081/repository/venkatesh/"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
