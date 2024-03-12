@@ -5,8 +5,8 @@ pipeline {
     nodejs'node18'
   }
 
-  environment= {
-    NODEJS_HOME = 'C:\\Program Files\\nodejs\\'
+  environment{
+    NODEJS_HOME = 'C:\Program Files\nodejs'
   }
     stages {
         stage('git') {
