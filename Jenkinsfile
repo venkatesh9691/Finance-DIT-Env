@@ -6,7 +6,7 @@ pipeline {
   }
 
   environment{
-    NODEJS_HOME = 'C:\Program Files\nodejs'
+    NODEJS_HOME = 'C:\\Program Files\\nodejs\\'
   }
     stages {
         stage('git') {
