@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools{
-        path = node 'C:\Program Files\nodejs'
+        path = nodejs 'C:\Program Files\nodejs'
     }
 
     stages {
