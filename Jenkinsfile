@@ -2,6 +2,7 @@ pipeline {
     agent any
 
   tools{
+    jdk'jdk8'
     nodejs'node18'
   }
     stages {
