@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('git') {
             steps {
-               git branch: 'main', url: 'http://16.171.59.12:8081/repository/venkatesh/' 
+               git branch: 'main', url: 'https://github.com/venkatesh9691/Finance-DIT-Env.git' 
             }
         }
         stage("npm dependencies"){
