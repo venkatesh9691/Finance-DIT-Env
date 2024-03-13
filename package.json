@@ -11,6 +11,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "engines": {
+    "node": "<=17.9.1"
+},
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",
@@ -46,8 +49,4 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.3.2"
   }
-  "engines": {
-    "node": ">=16.0.0"
-}
-
 }
