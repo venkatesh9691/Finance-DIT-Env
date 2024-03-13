@@ -4,10 +4,7 @@
   "publishConfig" : {
     "registry" : "http://16.171.59.12:8081/repository/venkatesh/"
   },
-   "engines": {
-    "node": "^20.10.0",
-    "yarn": "^1.22.21"
-  },
+   
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
